@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.kodakalaris.jane.logclient.MainActivity" >
+
+<TextView
+    android:id="@+id/lb_log"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="input log:" />
+
+<EditText
+    android:id="@+id/et_log"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/lb_log"
+    android:ems="10"
+    android:hint="" >
+
+    <requestFocus />
+</EditText>
+
+<Button
+    android:id="@+id/bt_send"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/lb_log"
+    android:layout_toRightOf="@+id/et_log"
+    android:text="send" />
+
+<TextView
+        android:id="@+id/log_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_log"
+        android:layout_marginTop="30dp" />
+</RelativeLayout>
